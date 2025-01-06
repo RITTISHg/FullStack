@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day1</title>
+        <link rel="icon" href="img/anime logo.jpeg">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootcamp1.css">
+        <link rel="JavaScript" href="bootcamp1.js">
+    </head>
+
+    <body>
+        <div class="overlay" id="overlay"></div>
+        <div class="loading-spinner" id="loadingSpinner">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Success!</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <i class="bi bi-check-circle"></i>
+                        <p>Your application has been successfully submitted!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h1>Hello, Welcome to my webpage</h1>
+            <p><strong><mark>The application development </mark></strong>lifecycle is a well-structured set of steps outlining app planning, creation, testing, deploying, and maintenance. As a development approach, it helps developers complete the application development stages effectively, at the lowest cost, and in the shortest time possible, to produce high-quality apps. 
+
+                Application development steps can vary depending on current trends in application development, specific app requirements, your type of business, and clients. Given their ever-changing requirements, it ensures apps meet expectations and delivers a superior experience that exceeds customer expectations and demands.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Registration Form</h2>
+            <form id="registrationForm" onsubmit="handleSubmit(event)">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="name">Full Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City:</label></td>
+                        <td><input type="text" id="city" name="city" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" id="dob" name="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="course">Interested Course:</label></td>
+                        <td>
+                            <select id="course" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="cse">Computer Science Engineering</option>
+                                <option value="ece">Electronics and Communication Engineering</option>
+                                <option value="eee">Electrical and Electronics Engineering</option>
+                                <option value="mech">Mechanical Engineering</option>
+                                <option value="civil">Civil Engineering</option>
+                                <option value="it">Information Technology</option>
+                                <option value="chemical">Chemical Engineering</option>
+                                <option value="biotech">Biotechnology Engineering</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit-container">
+                    <button type="submit" class="btn btn-danger">Submit Application</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="content-section">
+            <h2>Available Courses</h2>
+            <table class="table table-bordered">
+                <thead class="table-danger">
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Eligibility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Computer Science Engineering</td>
+                        <td>4 years</td>
+                        <td>10+2 with PCM</td>
+                    </tr>
+                    <tr>
+                        <td>Electronics and Communication Engineering</td>
+                        <td>4 years</td>
+                        <td>10+2 with PCM</td>
+                    </tr>
+                    <tr>
+                        <td>Mechanical Engineering</td>
+                        <td>4 years</td>
+                        <td>10+2 with PCM</td>
+                    </tr>
+                    <tr>
+                        <td>Civil Engineering</td>
+                        <td>4 years</td>
+                        <td>10+2 with PCM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+     
+        <script src="bootcamp1.js"></script>
+    </body>
+</html>
